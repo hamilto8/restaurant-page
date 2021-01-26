@@ -1,1 +1,1 @@
-console.log("A message from the index.js file");
+(()=>{const e=document.querySelector("#content");window.onload=()=>{e.innerHTML+="<header>Mr Macguffin's Mystery Dinners</header>"}})();
