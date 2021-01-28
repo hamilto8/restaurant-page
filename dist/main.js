@@ -1,1 +1,1 @@
-(()=>{const e=document.querySelector("#content");window.onload=()=>{e.innerHTML+="<header>Mr Macguffin's Mystery Dinners</header>"}})();
+(()=>{const e=document.querySelector("#content");window.onload=()=>{e.innerHTML+='\n    <div>\n        <header class="header">Mister MacGuffin\'s Mystery Diner</header>\n        <h3>Serving Mysterious Dinners Since 1963</h3>\n    </div>\n'}})();
