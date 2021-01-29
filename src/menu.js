@@ -1,6 +1,6 @@
 const displayMenu = () => {
     return `
-    <div>
+    <div class="menu">
         <div class="foods">
             <h4>Foods:</h4>
             <p>Salad: $1.50</p>

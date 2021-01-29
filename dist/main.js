@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\nconst contactUs = () => {\r\n return `\r\n    <div>\r\n        <h4>Contact Us:</h4>\r\n        <p>Shoot us an email!</p>\r\n    </div>\r\n `\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (contactUs);\n\n//# sourceURL=webpack://restaurant-page/./src/contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\nconst contactUs = () => {\r\n return `\r\n    <div class=\"contact-us>\r\n        <h4>Contact Us:</h4>\r\n        <p>Shoot us an email!</p>\r\n    </div>\r\n `\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (contactUs);\n\n//# sourceURL=webpack://restaurant-page/./src/contact.js?");
 
 /***/ }),
 
@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _men
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\nconst displayMenu = () => {\r\n    return `\r\n    <div>\r\n        <div class=\"foods\">\r\n            <h4>Foods:</h4>\r\n            <p>Salad: $1.50</p>\r\n            <p>Soup: $7.59</p>\r\n            <p>Pizza: $8.99</p>\r\n            <p>Pasta: $9.99</p>\r\n        </div>\r\n    </div>\r\n    `;\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (displayMenu);\n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\nconst displayMenu = () => {\r\n    return `\r\n    <div class=\"menu\">\r\n        <div class=\"foods\">\r\n            <h4>Foods:</h4>\r\n            <p>Salad: $1.50</p>\r\n            <p>Soup: $7.59</p>\r\n            <p>Pizza: $8.99</p>\r\n            <p>Pasta: $9.99</p>\r\n        </div>\r\n    </div>\r\n    `;\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (displayMenu);\n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
 
 /***/ })
 
