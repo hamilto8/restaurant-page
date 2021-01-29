@@ -1,1 +1,1 @@
-(()=>{const e=document.querySelector("#content");window.onload=()=>{e.innerHTML+='\n    <div>\n        <header class="header">Mister MacGuffin\'s Mystery Diner</header>\n        <h3>Serving Mysterious Dinners Since 1963</h3>\n    </div>\n'}})();
+(()=>{"use strict";const e=document.querySelector("#content");document.querySelector("#menu-btn").addEventListener("click",("\n    <p>Pizza: $3.50</p>\n",e.innerHTML="",e.innerHTML="\n    <p>Pizza: $3.50</p>\n",n++,void console.log(`Clicked ${n} times`)));let n=0})();
