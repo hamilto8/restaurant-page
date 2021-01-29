@@ -5,6 +5,23 @@ html, body{
 }
 
 .header {
-    background-color: red;
+    display: flex;
     color: #fff;
+    background-color: rgb(49, 49, 49);
+    height: 50px;
+    margin: 0;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    float: right;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: rgb(104, 104, 104);
 }
