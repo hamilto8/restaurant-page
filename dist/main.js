@@ -1,1 +1,1 @@
-(()=>{"use strict";const e=document.querySelector("#content");document.querySelector("#menu-btn").addEventListener("click",("\n    <p>Pizza: $3.50</p>\n",e.innerHTML="",e.innerHTML="\n    <p>Pizza: $3.50</p>\n",n++,void console.log(`Clicked ${n} times`)));let n=0})();
+(()=>{"use strict";const e=document.querySelector("#content");document.querySelector("#menu-btn").addEventListener("click",function(e){const n=document.createElement("div");n.innerHTML="<p> The Pizza costs $3.59</p>",console.log(n)}()),e.innerHTML="\n<p>Click a button to continue</p>\n"})();

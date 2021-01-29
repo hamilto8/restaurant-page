@@ -1,14 +1,17 @@
 const contentDiv = document.querySelector('#content');
 const menuBtn =document.querySelector('#menu-btn');
 
-import {menu} from './menu';
+import displayMenu from './menu';
 
-const subtitle = `<h3>Serving Mysterious Dinners Since 1963</h3>`;
-
-menuBtn.addEventListener('click', switchView(menu));
+menuBtn.addEventListener('click', switchView('menu'));
 
 function switchView(page){
-contentDiv.innerHTML = '';
-contentDiv.innerHTML = page;
+    const element = document.createElement('div');
+    element.innerHTML = displayMenu();
+
+    console.log(element);
 }
 
+contentDiv.innerHTML = `
+<p>Click a button to continue</p>
+`;

@@ -1,5 +1,5 @@
-const menu = `
-    <p>Pizza: $3.50</p>
-`;
+const displayMenu = () => {
+    return `<p> The Pizza costs $3.59</p>`;
+}
 
-export {menu}
+export default displayMenu
