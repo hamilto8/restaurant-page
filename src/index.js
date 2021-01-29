@@ -1,17 +1,31 @@
 const contentDiv = document.querySelector('#content');
 const menuBtn =document.querySelector('#menu-btn');
+const aboutBtn = document.querySelector('#about-btn');
+const contactBtn = document.querySelector('#contact-btn');
 
 import displayMenu from './menu';
+import aboutPage from './about';
+import contactUs from './contact';
 
-menuBtn.addEventListener('click', switchView('menu'));
+menuBtn.addEventListener('click', switchView);
+aboutBtn.addEventListener('click', showAbout);
+contactBtn.addEventListener('click', showContact);
 
-function switchView(page){
-    const element = document.createElement('div');
-    element.innerHTML = displayMenu();
+function switchView(){
+    let el = displayMenu();
+    contentDiv.innerHTML = el;
+}
 
-    console.log(element);
+function showAbout(){
+    let el = aboutPage();
+    contentDiv.innerHTML = el;
+}
+
+function showContact(){
+    let el = contactUs();
+    contentDiv.innerHTML = el;
 }
 
 contentDiv.innerHTML = `
-<p>Click a button to continue</p>
+<p>Click a Button to Continue!</p>
 `;
