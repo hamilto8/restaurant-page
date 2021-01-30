@@ -26,6 +26,4 @@ function showContact(){
     contentDiv.innerHTML = el;
 }
 
-contentDiv.innerHTML = `
-<p>Click a Button to Continue!</p>
-`;
+window.onload = showAbout();
