@@ -20,10 +20,10 @@ const displayMenu = () => {
                 <p>Pasta: $9.99</p>
             </div>
         </div>
+        </div>
         <div class="background-div">
             <img class="hero-image" src="/images/restaurant.jpg" />
         </div>
-    </div>
     `;
 }
 

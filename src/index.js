@@ -11,10 +11,10 @@ menuBtn.addEventListener('click', switchView);
 aboutBtn.addEventListener('click', showAbout);
 contactBtn.addEventListener('click', showContact);
 
-
 function switchView(){
-    let el = displayMenu();
-    contentDiv.innerHTML = el;
+    contentDiv.style.opacity = 1;
+    let page = displayMenu();
+    fadeOutControl();
 }
 
 function showAbout(){
@@ -25,6 +25,31 @@ function showAbout(){
 function showContact(){
     let el = contactUs();
     contentDiv.innerHTML = el;
+}
+
+function fadeOutControl(page){
+    if(contentDiv.style.opacity > 0){
+        let fadeOutInterval = setTimeout(() => {
+            contentDiv.style.opacity -= '.1';
+            fadeOutControl();
+        }, 80);
+    } else {
+        console.log(`Fade-out complete. Opacity: ${contentDiv.style.opacity}`);
+        contentDiv.innerHTML = displayMenu();
+        fadeInControl();
+    }
+}
+
+function fadeInControl(page){
+    if(contentDiv.style.opacity < '1'){
+        let fadeInInterval = setTimeout(() => {
+            contentDiv.style.opacity -= '-0.1';
+            console.log(`Fade-in opacity: ${contentDiv.style.opacity}`)
+            fadeInControl();
+        }, 80);
+    } else {
+        console.log('Fade-in Complete');
+    }
 }
 
 window.onload = showAbout();

@@ -96,6 +96,7 @@ body {
 
 .menu {
     display: flex;
+    position: absolute;
     justify-content: center;
     position: absolute;
     margin: 0;
@@ -104,8 +105,8 @@ body {
 }
 
 .menu-item {
- background-color: rgba(148, 148, 148, 0.4);
- 
+ /* background-color: rgba(148, 148, 148, 0.4); */
+ display: flex; 
 }
 
 .menu-item img {
