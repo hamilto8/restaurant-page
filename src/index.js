@@ -11,23 +11,33 @@ menuBtn.addEventListener('click', switchView);
 aboutBtn.addEventListener('click', showAbout);
 contactBtn.addEventListener('click', showContact);
 
+let page;
+
 function switchView(){
     contentDiv.style.opacity = 1;
-    let page = displayMenu();
-    fadeOutControl();
+    if(page !== displayMenu()){
+        fadeOutControl();
+    }
+    page = displayMenu();
 }
 
 function showAbout(){
-    let el = aboutPage();
-    contentDiv.innerHTML = el;
+    contentDiv.style.opacity = 1;
+    if(page !== aboutPage()){
+        fadeOutControl();
+    }
+    page = aboutPage();
 }
 
 function showContact(){
-    let el = contactUs();
-    contentDiv.innerHTML = el;
+    contentDiv.style.opacity = 1;
+    if(page !== contactUs()){
+        fadeOutControl();
+    }
+    page = contactUs();
 }
 
-function fadeOutControl(page){
+function fadeOutControl(){
     if(contentDiv.style.opacity > 0){
         let fadeOutInterval = setTimeout(() => {
             contentDiv.style.opacity -= '.1';
@@ -35,12 +45,12 @@ function fadeOutControl(page){
         }, 80);
     } else {
         console.log(`Fade-out complete. Opacity: ${contentDiv.style.opacity}`);
-        contentDiv.innerHTML = displayMenu();
+        contentDiv.innerHTML = page;
         fadeInControl();
     }
 }
 
-function fadeInControl(page){
+function fadeInControl(){
     if(contentDiv.style.opacity < '1'){
         let fadeInInterval = setTimeout(() => {
             contentDiv.style.opacity -= '-0.1';
@@ -52,4 +62,6 @@ function fadeInControl(page){
     }
 }
 
-window.onload = showAbout();
+window.onload = () =>{
+    contentDiv.innerHTML = aboutPage();
+}
