@@ -2,9 +2,13 @@ html, body{
     margin: 0;
     padding: none;
     box-sizing: border-box;
+    height: 100%;
 }
 
 body {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 30px;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
     text-align: center;
@@ -31,6 +35,11 @@ body {
     font-family: 'Dancing Script', cursive;
 }
 
+#content {
+    opacity: 1;
+    flex: 1 0 auto;
+}
+
 .btn {
     color: #fff;
     background-color: rgb(0, 0, 0);
@@ -45,6 +54,17 @@ body {
 .about-page {
     display: flex;
     justify-content: center;
+    position: absolute;
+    margin: 0;
+    top: 50px;
+}
+
+.overlay-div {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .tagline {
@@ -56,7 +76,24 @@ body {
 .hero-image {
     z-index: -1;
     width: 100%;
-    min-width: 350px;
+    min-width: 600px;
     opacity: .2;
     text-align: center;
+}
+
+.history {
+    display: flex;
+    top: 5em;
+    position: absolute;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 30px;
 }

@@ -11,6 +11,7 @@ menuBtn.addEventListener('click', switchView);
 aboutBtn.addEventListener('click', showAbout);
 contactBtn.addEventListener('click', showContact);
 
+
 function switchView(){
     let el = displayMenu();
     contentDiv.innerHTML = el;
