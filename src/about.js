@@ -8,6 +8,7 @@ const aboutPage = () => {
         <div class="background-div">
                 <img class="hero-image" src="/images/pizza.jpg" />
             </div>
+            <footer class="footer">Michael Hamilton 2021</footer>
         </div>
     `
 }

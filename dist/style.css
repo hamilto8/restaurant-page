@@ -37,7 +37,11 @@ body {
 
 #content {
     opacity: 1;
+    display: flex;
     flex: 1 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn {
@@ -73,10 +77,16 @@ body {
     justify-content: center;
 }
 
+.background-div {
+left: 0;
+top:  50px;
+
+}
+
 .hero-image {
     z-index: -1;
     width: 100%;
-    min-width: 600px;
+    /* min-height: 1000px; */
     opacity: .2;
     text-align: center;
 }
@@ -94,23 +104,30 @@ body {
     border-radius: 75px;
 }
 
+.contact-us {
+    position: absolute;
+}
+
 .menu {
-    display: flex;
     position: absolute;
-    justify-content: center;
-    position: absolute;
-    margin: 0;
-    top: 50px;
+    margin-top: 100px;
     z-index: 1;
 }
 
 .menu-item {
- /* background-color: rgba(148, 148, 148, 0.4); */
  display: flex; 
+ margin-top: 25px;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
 }
 
 .menu-item img {
     width: 100px;
+}
+
+.food-description {
+    margin-left: 30px;
 }
 
 .footer {
@@ -119,4 +136,8 @@ body {
     right: 0;
     bottom: 0;
     height: 30px;
+}
+
+button:focus{
+    color: #fff;
 }
