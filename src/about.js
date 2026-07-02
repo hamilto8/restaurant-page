@@ -1,16 +1,28 @@
 const aboutPage = () => {
     return `
-        <div class="about-page">
-        <h5 class="tagline">Serving Mysterious Dinners Since 1963</h5>
-        <div class="history">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui tortor, lobortis ut mi et, consectetur dignissim ante. Suspendisse potenti. Suspendisse potenti. Praesent eu dui mattis tellus tincidunt aliquet. Vivamus lacinia, magna pharetra molestie porta, ex lectus suscipit est, ac eleifend lacus mauris quis mauris. Mauris laoreet at turpis nec tristique. Fusce eu laoreet diam. Vivamus quis elit sit amet est aliquam gravida eget et lectus. Cras vel tempor massa. In et quam tempor sapien porta suscipit vel eu ipsum.
-        </div>
-        <div class="background-div">
-                <img class="hero-image" src="/images/pizza.jpg" />
+        <div class="about-page animate-fade-in">
+            <h1 class="page-title">Mister MacGuffin's</h1>
+            <p class="tagline">Serving Mysterious Dinners Since 1963</p>
+            
+            <div class="story-panel glass-panel">
+                <h2>Our Enigmatic Origin</h2>
+                <p class="story-text">
+                    Established in 1963 under circumstances that remain strictly classified, Mister MacGuffin's Mystery Diner is the world's premier establishment for enigmatic gastronomy. Our recipes are redacted, our ingredients are confidential, and our kitchen operates in absolute secrecy.
+                </p>
+                <p class="story-text">
+                    Every dish is a puzzle, every flavor a clue. We do not ask what you want; we serve you what your destiny dictates. Dine with us, and decode the ultimate culinary mystery.
+                </p>
             </div>
-            <footer class="footer">Michael Hamilton 2021</footer>
+            
+            <div class="background-div">
+                <img class="hero-image" src="images/pizza.jpg" alt="A delicious, fresh-baked artisanal pizza emerging from a glowing brick oven" />
+            </div>
+            
+            <footer class="footer">
+                <p>© 1963-${new Date().getFullYear()} Mister MacGuffin's Diner. Crafted for mystery.</p>
+            </footer>
         </div>
-    `
+    `;
 }
 
-export default aboutPage
+export default aboutPage;

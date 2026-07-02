@@ -3,25 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Dancing+Script:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
         <link rel="stylesheet" href="style.css">
         <title>Mister MacGuffin's Mystery Diner</title>
     </head>
     <body>
         <header class="header">
-            <i class="fas fa-question-circle"></i>
-            Mister MacGuffin's Mystery Diner 
-            <div class="button-group">
-                <button class="btn" id="menu-btn">Menu</button>
-                <button class="btn" id="contact-btn">Contact</button>
-                <button class="btn" id="about-btn">About</button>
+            <div class="logo">
+                <i class="fas fa-question-circle" aria-hidden="true"></i>
+                <span class="logo-text">Mister MacGuffin's Mystery Diner</span>
             </div>
+            <nav class="nav" aria-label="Main Navigation">
+                <button class="btn" id="about-btn" role="tab" aria-selected="false" aria-controls="content">About</button>
+                <button class="btn" id="menu-btn" role="tab" aria-selected="false" aria-controls="content">Menu</button>
+                <button class="btn" id="contact-btn" role="tab" aria-selected="false" aria-controls="content">Contact</button>
+            </nav>
         </header>
-        <div id="content">
-        </div>
+        <main id="content" aria-live="polite">
+        </main>
         <script src="./main.js"></script>
     </body>
 </html>
