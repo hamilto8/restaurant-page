@@ -91,7 +91,7 @@ function renderSuccessMessage(container) {
                 <i class="fas fa-envelope-open-text success-icon"></i>
             </div>
             <h2>Transmission Encrypted</h2>
-            <p class="success-message-text">Your report has been securely encoded. If your credentials match our clearance database, a contact agent will rendezvous at your coordinates.</p>
+            <p class="success-message-text">Your report has been securely encoded. If your identity matches our clearance database, a contact agent will rendezvous at your coordinates.</p>
             <p class="signature">— Mister MacGuffin</p>
         </div>
     `;
